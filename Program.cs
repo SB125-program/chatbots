@@ -84,6 +84,15 @@ namespace ConsoleApp1
                 //outputs a random quote from the library
                 Console.WriteLine(list[index]);
 
+                string feeling = Console.ReadLine();
+                var list = new List<string> { "oh no! I'm sorry to hear that :(", "That's good!", "Glad that your're ok!", "Hope you feel better soon!", "Actually, I feel that way too now!" };
+
+                var random = new Random();
+
+                int index = random.Next(list.Count);
+                //outputs a random response from the library
+                Console.WriteLine(list[index]);
+
                 goto Assist;
             }
 
