@@ -96,6 +96,21 @@ namespace ConsoleApp1
                 goto Assist;
             }
 
+            //this is where the math function will go
+            else if (task is "math") or (task is "calculate"){
+                Console.WriteLine("What is your first number?")
+                int num1 = int.Parse(Console.Readline());
+                Console.WriteLine("What is your operation?")
+                Console.WriteLine("type + for addition, type - for subtraction type / for division and * for multiplication");
+                string operation = Console.ReadLine();
+                Console.WriteLine("Enter the second number");
+                int num2 = int.Parse(Console.ReadLine());
+                if (operation is "+"){
+                    Console.WriteLine(num1 + num2);
+                    goto Assist;
+                }
+            }
+
             else
             {
                 Console.WriteLine("Sorry I do not know that one");
